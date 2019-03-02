@@ -38,7 +38,7 @@
 |               |  12           |          |
 |               |  35           |          |
 
- ![alt text](https://pp.userapi.com/c849532/v849532955/14471d/WozNy4YS6D4.jpg)
+ ![alt text](https://pp.userapi.com/c847120/v847120762/1b08d1/MuyLvCiRSE4.jpg)
  
   ### *Вторая программа*
   

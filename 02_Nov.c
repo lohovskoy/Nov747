@@ -73,6 +73,7 @@ int main() {
 		insert(tree, a[5]);
 		insert(tree, a[6]);
 	print(tree);
+	printf("\n");
 }
 
 void createlist(List *r_)

@@ -1,28 +1,22 @@
-void hSort(int *A, int N) //N - длина массива A
+void sort(int*arr,int l,int r)
 {
-    int tmp;
-    if (N <= 1)
-        return;
-    int l = 0, r = N - 1; //l - левая граница, r - правая
-    int pivot = A[rand()%N];
-    while (l != r)
+    int i=l, j=r;
+    int d;
+    int m=arr[(l+r)/2];
+    while(i<=j)
     {
-        if (A[l] >= pivot)
+        for(; arr[i]<m; i++);
+        for(; arr[j]>m; j--);
+        if(i<=j)
         {
-            if (A[r] < pivot)
-            {
-                tmp = A[l];
-                A[l] = A[r];
-                A[r] = tmp;
-                l++;
-            }
-            if (l != r) r--;
+            d=arr[i];
+            arr[i++]=arr[j];
+            arr[j--]=d;
         }
-        else l++;
     }
-    if (A[0] == A[N-1]) return; 
-    hSort(A, l);
-    hSort(A + l, N-l);
+    if(l<j) sort(arr,l,j);
+    if(i<r) sort(arr,i,r);
+ 
 }
 int main()
 {
@@ -33,7 +27,7 @@ int main()
             {
                 scanf("%d",&arr[i]);
             }
-    hSort(arr,n);
+    sort(arr,0,n);
 
         for(int i=0;i<n;i++)
             {

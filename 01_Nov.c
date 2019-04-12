@@ -1,3 +1,6 @@
+
+#include <stdio.h>
+
 void sort(int*arr,int l,int r)
 {
     int i=l, j=r;

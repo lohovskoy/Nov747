@@ -31,7 +31,7 @@ void siftDown(int *numbers, int root, int bottom)
 void heapSort(int *numbers, int array_size) 
 {
 
-  for (int i = (array_size / 2) - 1; i >= 0; i--)
+  for (int i = (array_size / 2) ; i >= 0; i--)
     siftDown(numbers, i, array_size - 1);
   for (int i = array_size - 1; i >= 1; i--)
   {
